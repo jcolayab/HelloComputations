@@ -5,5 +5,5 @@ int Computation::add(const int &a, const int &b) const {
 }
 
 int Computation::subtract(const int &a, const int &b) const {
-    return a + b;
+    return a - b;
 }

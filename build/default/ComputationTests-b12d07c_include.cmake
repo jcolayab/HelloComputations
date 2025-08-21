@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/jcola/Documents/projects/c++/HelloComputations/build/default/ComputationTests-b12d07c_tests.cmake")
+  include("C:/Users/jcola/Documents/projects/c++/HelloComputations/build/default/ComputationTests-b12d07c_tests.cmake")
+else()
+  add_test(ComputationTests_NOT_BUILT-b12d07c ComputationTests_NOT_BUILT-b12d07c)
+endif()

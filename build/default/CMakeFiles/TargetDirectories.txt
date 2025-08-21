@@ -1,0 +1,3 @@
+C:/Users/jcola/Documents/projects/c++/HelloComputations/build/default/CMakeFiles/HelloComputations.dir
+C:/Users/jcola/Documents/projects/c++/HelloComputations/build/default/CMakeFiles/edit_cache.dir
+C:/Users/jcola/Documents/projects/c++/HelloComputations/build/default/CMakeFiles/rebuild_cache.dir

@@ -24,8 +24,27 @@ set(HEADERS
     Computation.hpp
 )
 
+# Create static library from source
+add_library(computation STATIC
+    Computation.cpp
+)
+
+# Include headers
+target_include_directories(computation PUBLIC
+    ${PROJECT_NAME}/include
+)
+
 # Create executable
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+
+add_executable(test_app main.cpp)
+
+target_include_directories(test_app PRIVATE
+    ${PROJECT_NAME}/include
+)
+
+target_link_libraries(test_app PRIVATE computation)
+
 
 # Optional: organize in folders for IDEs
 source_group("Header Files" FILES ${HEADERS})

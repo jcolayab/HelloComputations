@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Users/jcola/Documents/projects/c++/HelloComputations/build/default/cmake_install.cmake",
-		"C:/Users/jcola/Documents/projects/c++/HelloComputations/build/default/_deps/catch2-build/cmake_install.cmake",
-		"C:/Users/jcola/Documents/projects/c++/HelloComputations/build/default/_deps/catch2-build/src/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

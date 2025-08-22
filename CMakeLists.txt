@@ -1,6 +1,14 @@
 cmake_minimum_required(VERSION 4.1.0)
 project(HelloComputations LANGUAGES CXX)
 
+option(CODE_COVERAGE "Enable coverage reporting" ON)
+
+if(CODE_COVERAGE AND CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    message(STATUS "Building with coverage flags")
+    add_compile_options(--coverage -O0 -g)
+    add_link_options(--coverage)
+endif()
+
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

@@ -9,3 +9,6 @@
 
 # The cmake-init-test branch
 - This branch has the init test
+
+# The cmake-coverage-test branch
+- This branch  has the coverage test

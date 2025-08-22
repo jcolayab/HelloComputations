@@ -1,0 +1,5 @@
+subtractCoverage covers all branches 1 0.0857954
+Computation::add works correctly 1 0.448164
+Computation::subtract works correctly 1 0.483611
+addCoverage covers all branches 1 0.434175
+---

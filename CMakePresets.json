@@ -36,8 +36,22 @@
         "CMAKE_BUILD_TYPE": "Debug",
         "BUILD_TESTING": "ON"
       }
+    },
+        {
+      "name": "coverage",
+      "displayName": "Coverage Build",
+      "description": "Build with coverage instrumentation for Catch2 tests",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/coverage",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CODE_COVERAGE": "ON",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      },
+      "hidden": false
     }
   ],
+  
   "buildPresets": [
     {
       "name": "default",
@@ -46,6 +60,13 @@
     {
       "name": "release",
       "configurePreset": "release"
+    },
+     {
+      "name": "coverage-build",
+      "configurePreset": "coverage",
+      "targets": ["test_runner"],
+      "hidden": false
+
     }
   ],
   "testPresets": [
@@ -56,6 +77,13 @@
     {
       "name": "test",
       "configurePreset": "test"
+    },
+    {
+      "name": "coverage-test",
+      "configurePreset": "coverage",
+      "output": {
+        "outputOnFailure": true
+      }
     }
   ]
 }
